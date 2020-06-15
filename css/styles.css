@@ -105,6 +105,11 @@ html, body {
     height: 90%;
     min-height: 90%;
     margin: 0 auto;
+    box-shadow: 0 5px 10px #a5aeb5;
+}
+
+#bookcase .shelf .book-no-desc:hover img{
+    box-shadow: 0 5px 10px grey;
 }
 
 #bookcase .carousel {
@@ -124,6 +129,11 @@ html, body {
 
 #bookcase .shelf:nth-child(odd) {
     background: rgba(165, 174, 181, 0.2);
+}
+
+#bookcase .carousel-control-next, #bookcase .carousel-control-prev {
+    width: 5%;
+    background-image: linear-gradient(0deg, rgba(165, 174, 181, 0.1) 0%, rgba(165, 174, 181, 0.4) 50%, rgba(165, 174, 181, 0.1) 100%);
 }
 
 #applinks {
