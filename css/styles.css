@@ -66,6 +66,11 @@ html, body {
     height: 100%;
     min-height: 100%;
     margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#bookcase .shelf .book-no-desc:hover img {
+    box-shadow: 0 0 25px rgba(0,0,0,1);
 }
 
 
@@ -92,4 +97,45 @@ html, body {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 50px;
     height: 50px;
+}
+
+#bookcase {
+    min-width: 800px;
+}
+
+@media (max-width: 1152px) {
+    #bookcase .carousel-item {
+        padding: 0 13%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #bookcase .shelf .book-no-desc {
+        padding: 5% 0;
+    }
+
+    #bookcase .carousel-item {
+        padding: 0 12%;
+    }
+
+}
+
+@media (max-width: 896px) {
+
+    #bookcase .carousel-item {
+        padding: 0 10%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+}
+
+@media (max-width: 640px) {
+
+
 }
