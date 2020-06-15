@@ -1,0 +1,162 @@
+.container-fluid {
+    padding: 0;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+html, body {
+    height: 100%;
+}
+
+.min-100 {
+    min-height: 100%;
+    height: 100%;
+}
+
+.w-200 {
+    width: 200% !important;
+}
+
+/*.carousel-item {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    !*height: 400px; !* or other desired height *!*!*/
+/*    overflow: hidden;*/
+/*}*/
+
+.carousel-image {
+    width: 400%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+#storefront {
+    height: 33.3%;
+    opacity: 1;
+    top: 0;
+    transition: all .7s;
+    transform: translateZ(0);
+    width: 100%;
+    z-index: 50;
+}
+
+#bookcase {
+    background: rgba(238, 239, 240, 0.3);
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: all .7s;
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    height: 93.3%;
+    z-index: 10;
+}
+
+#applinks {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#figure {
+    height: 75%;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    transition: opacity .7s, background-image 3s, left 1s, width .7s, height .7s;
+    transform: translateZ(0);
+    width: 100%;
+    z-index: -1;
+}
+
+
+@media (min-width: 768px) {
+
+    .carousel-image {
+        width: 200%;
+    }
+
+    #storefront {
+        width: 66.6%;
+    }
+
+    #bookcase {
+        left: 0;
+        width: 66.6%;
+        height: 66.6%;
+        top: 33.3%;
+    }
+
+    #applinks {
+        left: 67%;
+        width: 33%;
+    }
+
+    #figure {
+        height: 100%;
+        top: 0;
+        width: 66%;
+    }
+}
+
+
+@media (min-width: 860px) {
+
+    .carousel-image {
+        width: 300%;
+    }
+
+    #storefront {
+        width: 33.3%;
+    }
+
+    #bookcase {
+        height: 100%;
+        left: auto;
+        right: 0;
+        top: 0;
+        width: 66.7%;
+    }
+
+    #applinks {
+        left: 0;
+        width: 33%;
+    }
+
+    #figure {
+        height: 75%;
+        width: 33%;
+        top: 25%;
+    }
+}
