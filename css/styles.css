@@ -1,34 +1,4 @@
-.container-fluid {
-    padding: 0;
-}
 
-#figure .carousel-fade .carousel-inner .item {
-    opacity: 0;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-}
-
-#figure .carousel-fade .carousel-inner .active {
-    opacity: 1;
-}
-
-#figure .carousel-fade .carousel-inner .active.left,
-#figure .carousel-fade .carousel-inner .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-#figure .carousel-fade .carousel-inner .next.left,
-#figure .carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-}
-
-#figure .carousel-fade .carousel-control {
-    z-index: 2;
-}
 
 html, body {
     height: 100%;
@@ -43,37 +13,11 @@ html, body {
     width: 200% !important;
 }
 
-/*.carousel-item {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    !*height: 400px; !* or other desired height *!*!*/
-/*    overflow: hidden;*/
-/*}*/
-
-#figure .carousel-image {
-    width: 200%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-}
-
-#storefront {
-    height: 33.3%;
-    opacity: 1;
-    top: 0;
-    transition: all .7s;
-    transform: translateZ(0);
-    width: 100%;
-    z-index: 50;
-}
-
 #bookcase {
     background: rgba(238, 239, 240, 0.3);
     opacity: 1;
     position: absolute;
     left: 0;
-    top: 100%;
     transition: all .7s;
     transform: translate3d(0, 0, 0);
     width: 100%;
@@ -86,35 +30,48 @@ html, body {
     height: 33.3%;
 }
 
+#bookcase .shelf .carousel {
+    background-image: linear-gradient(#1c1f24, #353a40, #2b2f34);
+}
+
 #bookcase .shelf h5 {
+    margin: 0;
+    height: 15%;
     font-weight: 400;
+    background-color: #353a40;
+    color: #969696;
+    padding: 10px 0;
+    letter-spacing: 0.2em;
     opacity: .8;
     font-size: 1.25em;
-    padding: 5px 10px 0 20px;
+    text-align: center;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    text-transform: uppercase;
+}
+
+#bookcase .shelf .book-no-desc:first-child, #bookcase .shelf .book-no-desc:last-child {
+    opacity: 50%;
 }
 
 #bookcase .shelf .book-no-desc {
-    width: 24%;
+    width: 19%;
     height: 100%;
     display: inline-block;
+    text-align: center;
+    padding: 2% 0;
 }
 
 #bookcase .shelf .book-no-desc img{
-    display: block;
-    max-height: 90%;
-    height: 90%;
-    min-height: 90%;
+    max-height: 100%;
+    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
-    box-shadow: 0 5px 10px #a5aeb5;
 }
 
-#bookcase .shelf .book-no-desc:hover img{
-    box-shadow: 0 5px 10px grey;
-}
 
 #bookcase .carousel {
-    height: 80%;
-    max-height: 80%;
+    height: 85%;
+    max-height: 85%;
 }
 
 #bookcase .carousel-inner {
@@ -125,114 +82,14 @@ html, body {
 #bookcase .carousel-item {
     height: 100%;
     max-height: 100%;
+    padding: 0 15%;
 }
 
 #bookcase .shelf:nth-child(odd) {
     background: rgba(165, 174, 181, 0.2);
 }
 
-#bookcase .carousel-control-next, #bookcase .carousel-control-prev {
-    width: 5%;
-    background-image: linear-gradient(0deg, rgba(165, 174, 181, 0.1) 0%, rgba(165, 174, 181, 0.4) 50%, rgba(165, 174, 181, 0.1) 100%);
-}
-
-#applinks {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-}
-
-#applinks a:first-child {
-    border-top-left-radius: 5px;
-}
-
-#applinks a:last-child {
-    border-top-right-radius: 5px;
-}
-
-#applinks a {
-    background: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-    height: 70px;
-    padding: 10px;
-}
-
-#applinks img {
-    width: 60px;
-}
-
-#figure {
-    height: 75%;
-    position: absolute;
-    left: 0;
-    top: 25%;
-    transition: opacity .7s, background-image 3s, left 1s, width .7s, height .7s;
-    transform: translateZ(0);
-    width: 100%;
-    z-index: -1;
-}
-
-
-@media (min-width: 768px) {
-
-    #figure .carousel-image {
-        width: 300%;
-        left: 55%
-    }
-
-    #storefront {
-        width: 66.6%;
-    }
-
-    #bookcase {
-        left: 0;
-        width: 66.6%;
-        height: 66.6%;
-        top: 33.3%;
-    }
-
-    #applinks {
-        left: 67%;
-        width: 33%;
-    }
-
-    #figure {
-        height: 100%;
-        top: 0;
-        width: 66%;
-    }
-}
-
-
-@media (min-width: 860px) {
-
-    #figure .carousel-image {
-        width: 400%;
-        left: 60%;
-    }
-
-    #storefront {
-        width: 33.3%;
-    }
-
-    #bookcase {
-        height: 100%;
-        left: auto;
-        right: 0;
-        top: 0;
-        width: 66.7%;
-    }
-
-    #applinks {
-        left: 0;
-        width: 33%;
-    }
-
-    #figure {
-        height: 75%;
-        width: 33%;
-        top: 25%;
-    }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
 }
