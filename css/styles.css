@@ -51,7 +51,7 @@ html, body {
 /*}*/
 
 .carousel-image {
-    width: 400%;
+    width: 200%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -104,7 +104,8 @@ html, body {
 @media (min-width: 768px) {
 
     .carousel-image {
-        width: 200%;
+        width: 300%;
+        left: 55%
     }
 
     #storefront {
@@ -134,7 +135,8 @@ html, body {
 @media (min-width: 860px) {
 
     .carousel-image {
-        width: 300%;
+        width: 400%;
+        left: 60%;
     }
 
     #storefront {
