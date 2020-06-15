@@ -93,6 +93,35 @@ html, body {
     padding: 5px 10px 0 20px;
 }
 
+#bookcase .shelf .book-no-desc {
+    width: 24%;
+    height: 100%;
+    display: inline-block;
+}
+
+#bookcase .shelf .book-no-desc img{
+    display: block;
+    max-height: 90%;
+    height: 90%;
+    min-height: 90%;
+    margin: 0 auto;
+}
+
+#bookcase .carousel {
+    height: 80%;
+    max-height: 80%;
+}
+
+#bookcase .carousel-inner {
+    height: 100%;
+    max-height: 100%;
+}
+
+#bookcase .carousel-item {
+    height: 100%;
+    max-height: 100%;
+}
+
 #bookcase .shelf:nth-child(odd) {
     background: rgba(165, 174, 181, 0.2);
 }
