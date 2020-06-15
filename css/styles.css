@@ -2,7 +2,7 @@
     padding: 0;
 }
 
-.carousel-fade .carousel-inner .item {
+#figure .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
@@ -10,23 +10,23 @@
     transition-property: opacity;
 }
 
-.carousel-fade .carousel-inner .active {
+#figure .carousel-fade .carousel-inner .active {
     opacity: 1;
 }
 
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
+#figure .carousel-fade .carousel-inner .active.left,
+#figure .carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1;
 }
 
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
+#figure .carousel-fade .carousel-inner .next.left,
+#figure .carousel-fade .carousel-inner .prev.right {
     opacity: 1;
 }
 
-.carousel-fade .carousel-control {
+#figure .carousel-fade .carousel-control {
     z-index: 2;
 }
 
@@ -50,7 +50,7 @@ html, body {
 /*    overflow: hidden;*/
 /*}*/
 
-.carousel-image {
+#figure .carousel-image {
     width: 200%;
     position: absolute;
     left: 50%;
@@ -81,12 +81,47 @@ html, body {
     z-index: 10;
 }
 
+#bookcase .shelf {
+    width: 100%;
+    height: 33.3%;
+}
+
+#bookcase .shelf h5 {
+    font-weight: 400;
+    opacity: .8;
+    font-size: 1.25em;
+    padding: 5px 10px 0 20px;
+}
+
+#bookcase .shelf:nth-child(odd) {
+    background: rgba(165, 174, 181, 0.2);
+}
+
 #applinks {
     position: absolute;
     left: 0;
     bottom: 0;
     text-align: center;
     width: 100%;
+}
+
+#applinks a:first-child {
+    border-top-left-radius: 5px;
+}
+
+#applinks a:last-child {
+    border-top-right-radius: 5px;
+}
+
+#applinks a {
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 70px;
+    padding: 10px;
+}
+
+#applinks img {
+    width: 60px;
 }
 
 #figure {
@@ -103,7 +138,7 @@ html, body {
 
 @media (min-width: 768px) {
 
-    .carousel-image {
+    #figure .carousel-image {
         width: 300%;
         left: 55%
     }
@@ -134,7 +169,7 @@ html, body {
 
 @media (min-width: 860px) {
 
-    .carousel-image {
+    #figure .carousel-image {
         width: 400%;
         left: 60%;
     }
