@@ -2,7 +2,7 @@
 
 h2.shelf-header {
     margin: 0;
-    height: 15%;
+    /*height: 15%;*/
     font-weight: 400;
     background-color: #353a40;
     color: #969696;
@@ -42,6 +42,14 @@ div.col-lg-2:hover .img-fluid {
     .carousel-inner {
         padding: 5vh 0;
     }
+
+    .carousel-control-next {
+        right: 7vw;
+    }
+
+    .carousel-control-prev {
+        left: 7vw;
+    }
 }
 
 .carousel-inner .carousel-item.active,
@@ -49,6 +57,7 @@ div.col-lg-2:hover .img-fluid {
 .carousel-inner .carousel-item-prev {
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 @media (min-width: 992px) {
@@ -67,7 +76,34 @@ div.col-lg-2:hover .img-fluid {
     }
 
     .carousel-inner {
-        padding: 2vh 0;
+        /*padding: 1vh 0;*/
+        height: 100%;
+    }
+
+    .carousel-control-next {
+        right: 2vw;
+    }
+
+    .carousel-control-prev {
+        left: 2vw;
+    }
+
+    .container {
+        height: 267px;
+    }
+
+    .container > h2 {
+        padding: 5px 0;
+        /*height: 38px;*/
+    }
+
+    .container > .row {
+        height: 229px;
+    }
+
+    .img-fluid {
+        height: 193px;
+        margin: 20px;
     }
 
 }
@@ -76,3 +112,4 @@ div.col-lg-2:hover .img-fluid {
 .carousel-inner .carousel-item-left{
     transform: translateX(0);
 }
+
