@@ -4,11 +4,10 @@ h2.shelf-header {
     margin: 0;
     /*height: 15%;*/
     font-weight: 400;
-    background-color: #353a40;
+    background-color: #353A3F;
     color: #969696;
     padding: 10px 0;
     letter-spacing: 0.2em;
-    opacity: .8;
     font-size: 1.25em;
     text-align: center;
     font-family: Ubuntu, "times new roman", times, roman, serif;
@@ -27,20 +26,35 @@ div.col-lg-2:hover .img-fluid {
     box-shadow: 0 0 25px rgba(0,0,0,1);
 }
 
+.container {
+    height: 267px;
+}
+
+.container > h2 {
+    padding: 5px 0;
+    /*height: 38px;*/
+}
+
+.container > .row {
+    height: 229px;
+}
+
+.img-fluid {
+    height: 193px;
+    margin: 20px;
+}
+
+.carousel-inner {
+    /*padding: 1vh 0;*/
+    height: 100%;
+}
+
 @media (max-width: 992px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
     .carousel-inner .carousel-item > div:first-child {
         display: block;
-    }
-
-    .img-fluid {
-        height: 50vh;
-    }
-
-    .carousel-inner {
-        padding: 5vh 0;
     }
 
     .carousel-control-next {
@@ -75,35 +89,12 @@ div.col-lg-2:hover .img-fluid {
         opacity: 50%;
     }
 
-    .carousel-inner {
-        /*padding: 1vh 0;*/
-        height: 100%;
-    }
-
     .carousel-control-next {
         right: 2vw;
     }
 
     .carousel-control-prev {
         left: 2vw;
-    }
-
-    .container {
-        height: 267px;
-    }
-
-    .container > h2 {
-        padding: 5px 0;
-        /*height: 38px;*/
-    }
-
-    .container > .row {
-        height: 229px;
-    }
-
-    .img-fluid {
-        height: 193px;
-        margin: 20px;
     }
 
 }
