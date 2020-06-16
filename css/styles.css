@@ -14,9 +14,6 @@ h2.shelf-header {
     text-transform: uppercase;
 }
 
-.carousel {
-    background-image: linear-gradient(#1c1f24, #353a40, #2b2f34);
-}
 
 .img-fluid {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
@@ -28,6 +25,8 @@ div.col-lg-2:hover .img-fluid {
 
 .container {
     height: 267px;
+    max-width: 100% !important;
+    padding: 0;
 }
 
 .container > h2 {
@@ -36,7 +35,7 @@ div.col-lg-2:hover .img-fluid {
 }
 
 .container > .row {
-    height: 229px;
+    height: 234px;
 }
 
 .img-fluid {
@@ -104,3 +103,11 @@ div.col-lg-2:hover .img-fluid {
     transform: translateX(0);
 }
 
+.carousel-wrapper {
+    background-image: linear-gradient(#1c1f24, #353a40, #2b2f34);
+
+}
+
+.carousel-wrapper > div {
+    margin: 0 auto !important;
+}
