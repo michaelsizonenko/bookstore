@@ -1,40 +1,6 @@
 
 
-html, body {
-    height: 100%;
-}
-
-.min-100 {
-    min-height: 100%;
-    height: 100%;
-}
-
-.w-200 {
-    width: 200% !important;
-}
-
-#bookcase {
-    background: rgba(238, 239, 240, 0.3);
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    transition: all .7s;
-    transform: translate3d(0, 0, 0);
-    width: 100%;
-    height: 93.3%;
-    z-index: 10;
-}
-
-#bookcase .shelf {
-    width: 100%;
-    height: 33.3%;
-}
-
-#bookcase .shelf .carousel {
-    background-image: linear-gradient(#1c1f24, #353a40, #2b2f34);
-}
-
-#bookcase .shelf h5 {
+h2.shelf-header {
     margin: 0;
     height: 15%;
     font-weight: 400;
@@ -49,93 +15,64 @@ html, body {
     text-transform: uppercase;
 }
 
-#bookcase .shelf .book-no-desc:first-child, #bookcase .shelf .book-no-desc:last-child {
-    opacity: 50%;
+.carousel {
+    background-image: linear-gradient(#1c1f24, #353a40, #2b2f34);
 }
 
-#bookcase .shelf .book-no-desc {
-    width: 19%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    padding: 2% 0;
-}
-
-#bookcase .shelf .book-no-desc img{
-    max-height: 100%;
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto;
+.img-fluid {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-#bookcase .shelf .book-no-desc:hover img {
+div.col-lg-2:hover .img-fluid {
     box-shadow: 0 0 25px rgba(0,0,0,1);
 }
 
+@media (max-width: 992px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 
-#bookcase .carousel {
-    height: 85%;
-    max-height: 85%;
-}
+    .img-fluid {
+        height: 50vh;
+    }
 
-#bookcase .carousel-inner {
-    height: 100%;
-    max-height: 100%;
-}
-
-#bookcase .carousel-item {
-    height: 100%;
-    max-height: 100%;
-    padding: 0 15%;
-}
-
-#bookcase .shelf:nth-child(odd) {
-    background: rgba(165, 174, 181, 0.2);
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 50px;
-    height: 50px;
-}
-
-#bookcase {
-    min-width: 800px;
-}
-
-@media (max-width: 1152px) {
-    #bookcase .carousel-item {
-        padding: 0 13%;
+    .carousel-inner {
+        padding: 5vh 0;
     }
 }
 
-@media (max-width: 1024px) {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    justify-content: center;
+}
 
-    #bookcase .shelf .book-no-desc {
-        padding: 5% 0;
+@media (min-width: 992px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(16.6%);
     }
 
-    #bookcase .carousel-item {
-        padding: 0 12%;
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-16.6%);
+    }
+
+    .carousel-inner .carousel-item div.col-lg-2:first-child img, .carousel-inner .carousel-item div.col-lg-2:last-child img {
+        opacity: 50%;
+    }
+
+    .carousel-inner {
+        padding: 2vh 0;
     }
 
 }
 
-@media (max-width: 896px) {
-
-    #bookcase .carousel-item {
-        padding: 0 10%;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-
-
-}
-
-@media (max-width: 640px) {
-
-
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+    transform: translateX(0);
 }
