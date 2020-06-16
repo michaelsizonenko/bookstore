@@ -26,7 +26,34 @@ div.col-lg-2:hover .img-fluid {
     box-shadow: 0 0 25px rgba(0,0,0,1);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 400px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .carousel-control-next {
+        right: 15vw;
+    }
+
+    .carousel-control-prev {
+        left: 15vw;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 640px) {
 
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
@@ -58,29 +85,29 @@ div.col-lg-2:hover .img-fluid {
 
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-        transform: translateX(16.6%);
+        transform: translateX(20.6%);
     }
 
     .carousel-inner .carousel-item-left.active,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-16.6%);
+        transform: translateX(-20.6%);
     }
 
     .carousel-inner .carousel-item > div {
         display: none;
-        flex: 0 0 16.666667%;
-        max-width: 16.666667%;
+        flex: 0 0 20.666667%;
+        max-width: 20.666667%;
     }
     .carousel-inner .carousel-item > div:first-child,  .carousel-inner .carousel-item > div:nth-child(2),  .carousel-inner .carousel-item > div:nth-child(3)  {
         display: block;
     }
 
     .carousel-control-next {
-        right: 4vw;
+        right: 8vw;
     }
 
     .carousel-control-prev {
-        left: 4vw;
+        left: 8vw;
     }
 }
 
@@ -103,7 +130,7 @@ div.col-lg-2:hover .img-fluid {
         transform: translateX(-16.6%);
     }
 
-    .carousel-inner .carousel-item div.col-lg-2:first-child img, .carousel-inner .carousel-item div.col-lg-2:last-child img {
+    .carousel-inner .carousel-item div.col-lg-2:first-child .img-fluid, .carousel-inner .carousel-item div.col-lg-2:last-child .img-fluid {
         opacity: 50%;
     }
 
@@ -137,6 +164,9 @@ h2.shelf-header {
 
 .img-fluid {
     height: 193px;
+    min-width: 128px;
+    width: 128px;
+    max-width: 128px;
     margin: 20px;
 }
 
