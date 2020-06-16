@@ -8,7 +8,6 @@ h2.shelf-header {
     color: #969696;
     padding: 10px 0;
     letter-spacing: 0.2em;
-    opacity: .8;
     font-size: 1.25em;
     text-align: center;
     font-family: Ubuntu, "times new roman", times, roman, serif;
@@ -59,16 +58,18 @@ div.col-lg-2:hover .img-fluid {
 
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
-        transform: translateX(33.2%);
+        transform: translateX(16.6%);
     }
 
     .carousel-inner .carousel-item-left.active,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.2%);
+        transform: translateX(-16.6%);
     }
 
     .carousel-inner .carousel-item > div {
         display: none;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
     }
     .carousel-inner .carousel-item > div:first-child,  .carousel-inner .carousel-item > div:nth-child(2),  .carousel-inner .carousel-item > div:nth-child(3)  {
         display: block;
