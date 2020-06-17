@@ -90,6 +90,12 @@ div.col-lg-2:hover .img-fluid {
     }
 }
 
+@media (min-width: 640px) and (max-width: 992px) {
+     .carousel-inner .carousel-item div.col-lg-2:nth-child(3) .img-fluid {
+        opacity: 50%;
+    }
+}
+
 @media (min-width: 400px) and (max-width: 640px) {
 
     .carousel-inner .carousel-item-right.active,
@@ -136,7 +142,7 @@ div.col-lg-2:hover .img-fluid {
     }
 
     .carousel-control-next, .carousel-control-prev {
-        width: 3%;
+        width: 12%;
     }
 
 }
@@ -163,7 +169,7 @@ div.col-lg-2:hover .img-fluid {
     }
 
     .carousel-control-next, .carousel-control-prev {
-        width: 4%;
+        width: 18%;
     }
 
 }
